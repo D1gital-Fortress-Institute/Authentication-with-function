@@ -7,4 +7,9 @@ The code is divided into three sections
 **The Sign Up**: If the user doesn't have an account they are directed to create an account.  
 **The Data Base**: This is a basic data base structure using dictionary.
 
-[Digital Fortress Institute](https://www.digitalfortressltd.com)
+[Digital Fortress Institute][web-link]
+
+![ourimage](digitalfortresslogo.jpg)
+
+
+[web-link]:https://www.digitalfortressltd.com
