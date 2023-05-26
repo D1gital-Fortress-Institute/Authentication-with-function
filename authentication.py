@@ -1,4 +1,5 @@
 
+# This the data base function
 def data_base(first_name, last_name, email, password):
     global count_id
     data[f'id{count_id}'] = {
@@ -9,6 +10,7 @@ def data_base(first_name, last_name, email, password):
         }
     count_id += 1
 
+#This is a function to validate the users password
 def validate_password(pass1, pass2):
     if pass1 == pass2:
         return pass1
@@ -16,6 +18,7 @@ def validate_password(pass1, pass2):
         print("Wrong password match")
         sign_up()
 
+#This is a function to sign up a new user
 def sign_up():
     print("Sign Up")
     first_name = input("Enter First Name: ")
@@ -28,7 +31,7 @@ def sign_up():
     print("You have successfully sign up")
     login()
 
-
+# This is a function to login a user
 def login():
     print("Log In")
     email = input("Enter Email: ")
@@ -49,6 +52,11 @@ def login():
         print("You don't have an account")
         sign_up()
 
+"""
+This is the main menu function that the user sees first
+This function display the welcoming message and asks the
+user if the want to login or sign up first
+"""
 def menu():
     print("Ojay Stores")
     print("Authentication Page")
@@ -65,6 +73,10 @@ def menu():
         exit()
 
 
+"""
+This if name equals to main block restricts our program from
+printing out some commands in another file if imported
+"""
 if __name__=='__main__':
     count_id = 1
     data = {}
